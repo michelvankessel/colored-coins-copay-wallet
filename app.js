@@ -8,16 +8,6 @@ var express = require('express'),
 
 app.use(express.static(__dirname + '/public'));
 
-if (!process.env.S3_BUCKET) {
-  console.error("Error: Missing S3_BUCKET env variable");
-  return;
-}
-if (!process.env.S3_REGION) {
-  console.error("Error: Missing S3_REGION env variable");
-  return;
-}
-enableIconUpload(app, process.env.S3_REGION, process.env.S3_BUCKET);
-
 enableApiProxy(app);
 
 var port = process.env.PORT || 3000;

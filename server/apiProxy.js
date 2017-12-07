@@ -14,12 +14,9 @@ testnetProxy.on('proxyReq', userAgent);
 mainnetProxy.on('proxyReq', userAgent);
 
 var attach = function(app) {
-  app.use('/api/testnet', cors, function(req, res) {
-    testnetProxy.web(req, res, { target:'http://testnet.api.coloredcoins.org' });
-  });
 
   app.use('/api/livenet', cors, function(req, res) {
-    testnetProxy.web(req, res, { target:'http://api.coloredcoins.org' });
+    testnetProxy.web(req, res, { target:'http://localhost:8080' });
   });
 };
 
