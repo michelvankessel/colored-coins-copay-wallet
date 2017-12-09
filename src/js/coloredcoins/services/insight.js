@@ -9,7 +9,7 @@ angular.module('copayAddon.coloredCoins').factory('insight', function ($http, pr
   }
 
   Insight.prototype.getTransaction = function(txid, cb) {
-    var url = this.url + '/api/tx/' + txid;
+    var url = this.url + '/tx/' + txid;
 
     $http.get(url)
         .success(function (data, status) {
@@ -23,12 +23,12 @@ angular.module('copayAddon.coloredCoins').factory('insight', function ($http, pr
 
   var testnetInsight = new Insight({ network: 'testnet', url: 'https://test-insight.bitpay.com' });
 
-  var livenetInsight = new Insight({ network: 'livenet', url: 'https://insight.bitpay.com' });
+  var livenetInsight = new Insight({ network: 'livenet', url: 'https://node.blackcoin.io/insight-api' });
 
   return {
     get: function() {
       var fc = profileService.focusedClient;
-      return fc.credentials.network == 'testnet' ? testnetInsight : livenetInsight;
+      return fc.credentials.network == livenetInsight;
     }
   };
 });
