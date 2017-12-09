@@ -28,7 +28,7 @@ angular.module('copayAddon.coloredCoins').factory('insight', function ($http, pr
   return {
     get: function() {
       var fc = profileService.focusedClient;
-      return fc.credentials.network == livenetInsight;
+      return fc.credentials.network = livenetInsight;
     }
   };
 });
