@@ -209,7 +209,7 @@ function ColoredCoins($rootScope, profileService, ccFeeService, bitcore, $http, 
             reissuable: metadata.lockStatus == false,
             icon: _extractAssetIcon(metadata),
             issuanceTxid: metadata.issuanceTxid,
-            metadata: metadata.metadataOfIssuence.data,
+            metadata: '',
             locked: isLocked
           };
           assets.push(a);
