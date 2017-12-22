@@ -29,7 +29,7 @@ msgstr "[Solde masqué]"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} seront déduits pour les frais de réseau Bitcoin"
+msgstr "{{fee}} seront déduits pour les frais de réseau Blackcoin"
 
 #: public/views/includes/confirm-tx.html
 msgid "{{feeRateStr}} of the transaction"
@@ -58,7 +58,7 @@ msgstr "* Une proposition de paiement peut être supprimée si vous en êtes le 
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>SI VOUS PERDEZ L'ACCÈS À VOTRE PORTEFEUILLE COPAY OU À VOS CLÉS PRIVÉES CHIFFRÉES ET QUE VOUS N'AVEZ PAS ENTREPOSÉ SÉPARÉMENT UNE SAUVEGARDE DE VOTRE PORTEFEUILLE ET LES MOTS DE PASSE CORRESPONDANT, VOUS RECONNAISSEZ ET ACCEPTEZ QUE LES BITCOINS QUE VOUS AVEZ ASSOCIÉ À CE PORTEFEUILLE COPAY DEVIENNENT INACCESSIBLES.</b>"
+msgstr "<b>SI VOUS PERDEZ L'ACCÈS À VOTRE PORTEFEUILLE COPAY OU À VOS CLÉS PRIVÉES CHIFFRÉES ET QUE VOUS N'AVEZ PAS ENTREPOSÉ SÉPARÉMENT UNE SAUVEGARDE DE VOTRE PORTEFEUILLE ET LES MOTS DE PASSE CORRESPONDANT, VOUS RECONNAISSEZ ET ACCEPTEZ QUE LES BLACKCOINS QUE VOUS AVEZ ASSOCIÉ À CE PORTEFEUILLE COPAY DEVIENNENT INACCESSIBLES.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,7 +74,7 @@ msgstr "<b>OU</b> les phrases de récupération de portefeuille de <b>tous</b> l
 
 #: public/views/disclaimer.html
 msgid "A multisignature bitcoin wallet"
-msgstr "Un portefeuille bitcoin multi-signatures"
+msgstr "Un portefeuille blackcoin multi-signatures"
 
 #: public/views/preferencesGlobal.html
 msgid "About Copay"
@@ -245,7 +245,7 @@ msgstr "Chemin BIP32 pour la dérivation de l'adresse"
 
 #: public/views/walletHome.html
 msgid "Bitcoin address"
-msgstr "Adresse Bitcoin"
+msgstr "Adresse Blackcoin"
 
 #: public/views/preferencesGlobal.html
 msgid "Bitcoin Network Fee Policy"
@@ -253,11 +253,11 @@ msgstr "Frais de réseau"
 
 #: public/views/preferencesFee.html
 msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
-msgstr "Les transactions Bitcoin peuvent inclure des frais prélevés par les mineurs du réseau. Plus les frais sont importants, et plus un mineur sera incité à inclure cette transaction dans un bloc. Les frais actuels sont déterminés en fonction de la charge du réseau et du choix sélectionné."
+msgstr "Les transactions Blackcoin peuvent inclure des frais prélevés par les mineurs du réseau. Plus les frais sont importants, et plus un mineur sera incité à inclure cette transaction dans un bloc. Les frais actuels sont déterminés en fonction de la charge du réseau et du choix sélectionné."
 
 #: public/views/paymentUri.html
 msgid "Bitcoin URI is NOT valid!"
-msgstr "L'URI Bitcoin n'est pas valide !"
+msgstr "L'URI Blackcoin n'est pas valide !"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -488,7 +488,7 @@ msgstr "Impossible de rejoindre le portefeuille"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not recognize a valid Bitcoin QR Code"
-msgstr "Impossible de reconnaître un code QR Bitcoin valide"
+msgstr "Impossible de reconnaître un code QR Blackcoin valide"
 
 #: src/js/controllers/modals/txpDetails.js
 msgid "Could not reject payment"
@@ -1013,7 +1013,7 @@ msgstr "Plusieurs destinataires"
 
 #: public/views/walletHome.html
 msgid "My Bitcoin address"
-msgstr "Mon adresse Bitcoin"
+msgstr "Mon adresse Blackcoin"
 
 #: public/views/modals/addressbook.html
 msgid "My contacts"
@@ -1468,7 +1468,7 @@ msgstr "Envoyer les adresses par e-mail"
 
 #: public/views/includes/confirm-tx.html
 msgid "Send bitcoin"
-msgstr "Envoyer les bitcoins"
+msgstr "Envoyer les blackcoins"
 
 #: public/views/export.html
 #: public/views/preferencesLogs.html
@@ -1634,7 +1634,7 @@ msgstr "Conditions d'utilisation"
 
 #: public/views/includes/terms.html
 msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
-msgstr "Les auteurs de ce logiciel, employés et sociétés affiliés à BitPay, détenteurs de droits d'auteur, et BitPay, Inc. ne peuvent pas récupérer vos clés privées ou mots de passe si vous les perdez et ne peuvent pas garantir la confirmation des transactions étant donné qu'ils n'ont pas de contrôle sur le réseau Bitcoin."
+msgstr "Les auteurs de ce logiciel, employés et sociétés affiliés à BitPay, détenteurs de droits d'auteur, et BitPay, Inc. ne peuvent pas récupérer vos clés privées ou mots de passe si vous les perdez et ne peuvent pas garantir la confirmation des transactions étant donné qu'ils n'ont pas de contrôle sur le réseau Blackcoin."
 
 #: public/views/import.html
 msgid "The derivation path"
@@ -1667,7 +1667,7 @@ msgstr "La demande n'a pas été comprise par le serveur"
 
 #: public/views/includes/terms.html
 msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "Le logiciel ne constitue pas un compte où BitPay, ou des tiers, agissent comme des intermédiaires financiers ou dépositaires de vos bitcoins."
+msgstr "Le logiciel ne constitue pas un compte où BitPay, ou des tiers, agissent comme des intermédiaires financiers ou dépositaires de vos blackcoins."
 
 #: public/views/includes/terms.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."

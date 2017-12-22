@@ -24,7 +24,7 @@ msgstr "(Trusted)"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} will be deducted for bitcoin networking fees"
+msgstr "{{fee}} will be deducted for blackcoin networking fees"
 
 #: public/views/copayers.html
 #: public/views/walletHome.html
@@ -45,7 +45,7 @@ msgstr "* Een betalingsvoorstel kan worden verwijderd als 1) u de aanmaker bent,
 
 #: public/views/disclaimer.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
+msgstr "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BLACKCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet seeds (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet seeds of any of the other copayers)."
@@ -61,7 +61,7 @@ msgstr "<b>OR</b> the wallet seeds of <b>all</b> copayers in the wallet"
 
 #: public/views/splash.html
 msgid "A multisignature bitcoin wallet"
-msgstr "A multisignature bitcoin wallet"
+msgstr "A multisignature blackcoin wallet"
 
 #: public/views/preferences.html
 msgid "About Copay"
@@ -202,19 +202,19 @@ msgstr "Before receiving funds, it is highly recommended you backup your wallet 
 
 #: public/views/walletHome.html
 msgid "Bitcoin address"
-msgstr "Bitcoin address"
+msgstr "Blackcoin address"
 
 #: public/views/preferences.html
 msgid "Bitcoin Network Fee Policy"
-msgstr "Bitcoin Network Fee Policy"
+msgstr "Blackcoin Network Fee Policy"
 
 #: public/views/preferencesFee.html
 msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
-msgstr "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
+msgstr "Blackcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
 
 #: public/views/paymentUri.html
 msgid "Bitcoin URI is NOT valid!"
-msgstr "Bitcoin URI is NOT valid!"
+msgstr "Blackcoin URI is NOT valid!"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -403,7 +403,7 @@ msgstr "Could not join wallet"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not recognize a valid Bitcoin QR Code"
-msgstr "Could not recognize a valid Bitcoin QR Code"
+msgstr "Could not recognize a valid Blackcoin QR Code"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not reject payment"
@@ -877,7 +877,7 @@ msgstr "Multisignature wallet"
 
 #: public/views/walletHome.html
 msgid "My Bitcoin address"
-msgstr "My Bitcoin address"
+msgstr "My Blackcoin address"
 
 #: public/views/paymentUri.html
 msgid "Network"
@@ -1400,7 +1400,7 @@ msgstr "Testnet"
 
 #: public/views/disclaimer.html
 msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
-msgstr "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
+msgstr "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Blackcoin network."
 
 #: src/js/services/ledger.js
 msgid "The Ledger Chrome application is not installed"
@@ -1433,7 +1433,7 @@ msgstr "The seed could require a passphrase to be imported"
 
 #: public/views/disclaimer.html
 msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
+msgstr "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your blackcoin."
 
 #: public/views/disclaimer.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."

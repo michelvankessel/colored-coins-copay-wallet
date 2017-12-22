@@ -58,7 +58,7 @@ msgstr "* Una proposta di pagamento può essere eliminata se 1) Tu sei il creato
 
 #: public/views/includes/terms.html
 msgid "<b>IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY WALLET WILL BECOME INACCESSIBLE.</b>"
-msgstr "<b>Se perdi l'accesso al tuo portafoglio COPAY o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi BITCOIN associato con quel portafoglio COPAY diventerà inaccessibile.</b>"
+msgstr "<b>Se perdi l'accesso al tuo portafoglio COPAY o tuo crittografato chiavi PRIVATE e non hai archiviato separatamente una copia di BACKUP del vostro portafoglio e la corrispondente PASSWORD, tu riconosci e accetti che qualsiasi BLACKCOIN associato con quel portafoglio COPAY diventerà inaccessibile.</b>"
 
 #: public/views/backup.html
 msgid "<b>OR</b> 1 wallet export file and the remaining quorum of wallet recovery phrases (e.g. in a 3-5 wallet: 1 wallet export file + 2 wallet recovery phrases of any of the other copayers)."
@@ -74,7 +74,7 @@ msgstr "<b>O</b> le frasi di recupero di portafoglio di <b>tutti</b> i copayers 
 
 #: public/views/disclaimer.html
 msgid "A multisignature bitcoin wallet"
-msgstr "Un portafoglio bitcoin multifirma"
+msgstr "Un portafoglio blackcoin multifirma"
 
 #: public/views/preferencesGlobal.html
 msgid "About Copay"
@@ -245,19 +245,19 @@ msgstr "Percorso BIP32 per generare l'indirizzo"
 
 #: public/views/walletHome.html
 msgid "Bitcoin address"
-msgstr "Indirizzo Bitcoin"
+msgstr "Indirizzo Blackcoin"
 
 #: public/views/preferencesGlobal.html
 msgid "Bitcoin Network Fee Policy"
-msgstr "Criterio delle Commissioni del Bitcoin Network"
+msgstr "Criterio delle Commissioni del Blackcoin Network"
 
 #: public/views/preferencesFee.html
 msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Current fees are determined based on network load and the selected policy."
-msgstr "Le transazioni bitcoin possono includere una tassa raccolta dai minatori della rete. Più alta è la commissione, maggiore sarà l'incentivo per un minatore a includere tale transazione in un blocco. Le commissioni attuali sono in base al carico della rete e ai criteri selezionati."
+msgstr "Le transazioni blackcoin possono includere una tassa raccolta dai minatori della rete. Più alta è la commissione, maggiore sarà l'incentivo per un minatore a includere tale transazione in un blocco. Le commissioni attuali sono in base al carico della rete e ai criteri selezionati."
 
 #: public/views/paymentUri.html
 msgid "Bitcoin URI is NOT valid!"
-msgstr "Il Bitcoin URI NON è valido!"
+msgstr "Il Blackcoin URI NON è valido!"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -488,7 +488,7 @@ msgstr "Impossibile partecipare al portafoglio"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not recognize a valid Bitcoin QR Code"
-msgstr "Impossibile riconoscere un Codice QR Bitcoin valido"
+msgstr "Impossibile riconoscere un Codice QR Blackcoin valido"
 
 #: src/js/controllers/modals/txpDetails.js
 msgid "Could not reject payment"
@@ -1013,7 +1013,7 @@ msgstr "Più destinatari"
 
 #: public/views/walletHome.html
 msgid "My Bitcoin address"
-msgstr "Il mio indirizzo Bitcoin"
+msgstr "Il mio indirizzo Blackcoin"
 
 #: public/views/modals/addressbook.html
 msgid "My contacts"
@@ -1468,7 +1468,7 @@ msgstr "Invia indirizzi via Email"
 
 #: public/views/includes/confirm-tx.html
 msgid "Send bitcoin"
-msgstr "Invia bitcoin"
+msgstr "Invia blackcoin"
 
 #: public/views/export.html
 #: public/views/preferencesLogs.html
@@ -1634,7 +1634,7 @@ msgstr "Termini di Utilizzo"
 
 #: public/views/includes/terms.html
 msgid "The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network."
-msgstr "Gli autori del software, dipendenti e affiliati di Bitpay, detentori del copyright e BitPay, Inc non possono recuperare la tua password o chiave privata se si perde o si dimentica e non può garantire la conferma della transazione poiché non hanno controllo della rete Bitcoin."
+msgstr "Gli autori del software, dipendenti e affiliati di Bitpay, detentori del copyright e BitPay, Inc non possono recuperare la tua password o chiave privata se si perde o si dimentica e non può garantire la conferma della transazione poiché non hanno controllo della rete Blackcoin."
 
 #: public/views/import.html
 msgid "The derivation path"
@@ -1667,7 +1667,7 @@ msgstr "La richiesta potrebbe non essere compresa dal server"
 
 #: public/views/includes/terms.html
 msgid "The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin."
-msgstr "Il software non costituisce un account dove BitPay o altre terze parti servono come intermediari finanziari o custodi dei tuoi bitcoin."
+msgstr "Il software non costituisce un account dove BitPay o altre terze parti servono come intermediari finanziari o custodi dei tuoi blackcoin."
 
 #: public/views/includes/terms.html
 msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet."

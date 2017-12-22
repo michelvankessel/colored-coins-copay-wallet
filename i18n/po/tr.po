@@ -24,7 +24,7 @@ msgstr "(Güvenilir)"
 
 #: src/js/controllers/walletHome.js
 msgid "{{fee}} will be deducted for bitcoin networking fees"
-msgstr "{{fee}} bitcoin ağ ücreti olarak düşülecektir"
+msgstr "{{fee}} blackcoin ağ ücreti olarak düşülecektir"
 
 #: public/views/copayers.html
 #: public/views/includes/walletInfo.html
@@ -61,7 +61,7 @@ msgstr ""
 
 #: public/views/splash.html
 msgid "A multisignature bitcoin wallet"
-msgstr "Çoklu imzalı bitcoin cüzdanı"
+msgstr "Çoklu imzalı blackcoin cüzdanı"
 
 #: public/views/preferences.html
 msgid "About Copay"
@@ -223,19 +223,19 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "Bitcoin address"
-msgstr "Bitcoin adresi"
+msgstr "Blackcoin adresi"
 
 #: public/views/preferences.html
 msgid "Bitcoin Network Fee Policy"
-msgstr "Bitcoin ağ ücret politikası"
+msgstr "Blackcoin ağ ücret politikası"
 
 #: public/views/preferencesFee.html
 msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
-msgstr "Bitcoin işlemlerine ağda madenciler tarafından toplanan ücret dahildir. Daha yüksek ücret, madenciler için işleminizi bloklarına eklemek için daha teşvik edicidir. Gerçek ücretler ağ yüküne ve seçili ilkeye göre belirlenir."
+msgstr "Blackcoin işlemlerine ağda madenciler tarafından toplanan ücret dahildir. Daha yüksek ücret, madenciler için işleminizi bloklarına eklemek için daha teşvik edicidir. Gerçek ücretler ağ yüküne ve seçili ilkeye göre belirlenir."
 
 #: public/views/paymentUri.html
 msgid "Bitcoin URI is NOT valid!"
-msgstr "Bitcoin URI geçerli değil!"
+msgstr "Blackcoin URI geçerli değil!"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
@@ -424,7 +424,7 @@ msgstr "Cüzdana katılma başarısız"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not recognize a valid Bitcoin QR Code"
-msgstr "Geçerli bir Bitcoin QR kodu tanımıyor"
+msgstr "Geçerli bir Blackcoin QR kodu tanımıyor"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not reject payment"
@@ -921,7 +921,7 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "My Bitcoin address"
-msgstr "Bitcoin adresim"
+msgstr "Blackcoin adresim"
 
 #: public/views/paymentUri.html
 msgid "Network"
