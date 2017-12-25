@@ -113,7 +113,7 @@
               </li>
               <li class="line-b p10 oh">
                   <span class="text-gray property-name" translate>Issuance TX</span>:
-                  <span class="right pointer enable_text_select long-line" ng-click="openBlockExplorer(asset)">
+                  <span class="right pointer enable_text_select long-line">
                     {{ asset.issuanceTxid | limitTo: 38 }}...
                   </span>
               </li>
@@ -132,13 +132,6 @@
               </li>
           </ul>
 
-          <div ng-show="asset.issuanceTxid">
-              <div class="text-center m20t">
-                  <button class="button outline round dark-gray tiny" ng-click="openBlockExplorer(asset)">
-                      <span class="text-gray" translate>See it on the blockchain</span>
-                  </button>
-              </div>
-          </div>
       </div>
 
       <div class="extra-margin-bottom"></div>

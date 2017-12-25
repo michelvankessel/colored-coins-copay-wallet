@@ -209,7 +209,7 @@ function ColoredCoins($rootScope, profileService, ccFeeService, bitcore, $http, 
             reissuable: metadata.lockStatus == false,
             icon: _extractAssetIcon(metadata),
             issuanceTxid: metadata.issuanceTxid,
-            metadata: '',
+            metadata: metadata.metadataOfIssuence.data,
             locked: isLocked
           };
           assets.push(a);
@@ -298,7 +298,7 @@ function ColoredCoins($rootScope, profileService, ccFeeService, bitcore, $http, 
           fee: fee,
           divisibility: 0,
           amount: issuance.amount,
-          reissueable: issuance.reissuable || false,
+          reissueable: false,
           transfer: [{
             'address': financeUtxo.address,
             'amount': issuance.amount

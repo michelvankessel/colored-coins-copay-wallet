@@ -21,14 +21,6 @@
                       <a class="close-notification text-warning">&#215;</a>
                   </div>
 
-                  <div class="text-center m10b">
-                      <div class="cc-icon-dropbox cc-asset-icon" ngf-drop ngf-select ngf-accept="'image/*'" ng-model="file"
-                           ngf-drag-over-class="dragover" ngf-multiple="false" ngf-allow-dir="false">
-                          <img ngf-src="file" ng-show="file">
-                          <span ng-hide="file">Add icon</span>
-                      </div>
-                  </div>
-
                   <div>
                       <div class="row collapse">
                           <label for="assetName" class="left">
@@ -38,7 +30,7 @@
                       <div class="input">
                           <input type="text" id="assetName" name="assetName" ng-disabled="assets.blockUx"
                                  ng-attr-placeholder="{{'Asset Name' | translate}}" ng-model="issuance.assetName"
-                                 required ng-focus="home.formFocus('assetName')" ng-blur="home.formFocus(false)">
+                                 required ng-focus="home.formFocus('assetName')" ng-blur="home.formFocus(false)" maxlength="20">
                       </div>
                   </div>
                   <div>
@@ -50,7 +42,7 @@
                       <div class="input">
                           <input type="text" id="issuer" name="issuer" ng-disabled="assets.blockUx"
                                  ng-attr-placeholder="{{'Issuer' | translate}}" ng-model="issuance.issuer"
-                                 required ng-focus="home.formFocus('issuer')" ng-blur="home.formFocus(false)">
+                                 required ng-focus="home.formFocus('issuer')" ng-blur="home.formFocus(false)" maxlength="16">
                       </div>
                   </div>
                   <div class="row">
@@ -89,40 +81,8 @@
                       <div class="input">
                           <input type="text" id="description" name="description" ng-disabled="assets.blockUx"
                                  ng-attr-placeholder="{{'Description' | translate}}" ng-model="issuance.description"
-                                 ng-focus="home.formFocus('description')" ng-blur="home.formFocus(false)">
+                                 ng-focus="home.formFocus('description')" ng-blur="home.formFocus(false)" maxlength="16">
                       </div>
-                  </div>
-                  <div>
-                      <div class="row collapse">
-                          <ion-toggle ng-model="issuance.reissuable" toggle-class="toggle-balanced"
-                           class="cc-inline-switch" ng-disabled="assets.blockUx">
-                            <span class="toggle-label" translate>Reissuable</span>
-                          </ion-toggle>
-                      </div>
-                  </div>
-
-                  <h4 class="title" translate>Metadata</h4>
-                  <div>
-                      <div class="row" ng-repeat="field in issuance.userData">
-                          <div class="small-6 columns">
-                              <input type="text" ng-disabled="assets.blockUx"
-                                     ng-attr-placeholder="{{'Name' | translate}}" ng-model="field.key">
-                          </div>
-                          <div class="small-6 columns">
-                              <input type="text" id="description" name="description" ng-disabled="assets.blockUx"
-                                     ng-attr-placeholder="{{'Value' | translate}}" ng-model="field.value">
-                              <a class="postfix size-12 m0 text-gray" ng-click="removeField(field)">
-                                  <i class="fi-minus-circle size-18"></i>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="text-center">
-                      <a ng-click="addField()" class="button outline round light-gray tiny cc-add-field-button"
-                          ng-disabled="assets.blockUx">
-                          <i class="fi-plus size-18 vm"></i>
-                          <span translate>Add metadata field</span>
-                      </a>
                   </div>
 
                   <div class="row" ng-show="!home.onGoingProcess">
