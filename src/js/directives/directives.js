@@ -27,6 +27,8 @@ angular.module('copayApp.directives')
             if (!profileService.focusedClient)
               return;
             var networkName = profileService.focusedClient.credentials.network;
+				if(typeof networkName !== 'string')
+					networkName = networkName.network;
             // Regular url
             if (/^https?:\/\//.test(value)) {
               ctrl.$setValidity('validAddress', true);
