@@ -25,20 +25,17 @@ angular.module('copayAddon.coloredCoins')
       };
 
       root.estimateFee = function(nbInputs, nbOutputs, cb) {
-        feeService.getCurrentFeeValue(function(err, feePerKb) {
-          if (err) $log.debug(err);
+        
+        var size = _getEstimatedSize(nbInputs, nbOutputs);
+        $log.debug("Estimated size: " + size);
+        var fee = 10000 * Math.ceil(1 + size / 1000);
 
-          var size = _getEstimatedSize(nbInputs, nbOutputs);
-          $log.debug("Estimated size: " + size);
-          var fee = feePerKb * size / 1000;
+        // Colored Coins API v3 rejects fee lower than 1000 satoshis (http://coloredcoins.org/documentation/#IssueAsset)
+        fee = fee < 1000 ? 1000 : fee; 
 
-          // Colored Coins API v3 rejects fee lower than 1000 satoshis (http://coloredcoins.org/documentation/#IssueAsset)
-          fee = fee < 1000 ? 1000 : fee; 
-
-          fee = parseInt(fee.toFixed(0));
-          $log.debug("Estimated fee: " + fee);
-          return cb(null, fee);
-        });
+        fee = parseInt(fee.toFixed(0));
+        $log.debug("Estimated fee: " + fee);
+        return cb(null, fee);
       };
 
       root.estimateCostOfIssuance = function(cb) {
