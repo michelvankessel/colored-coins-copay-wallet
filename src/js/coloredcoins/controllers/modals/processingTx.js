@@ -159,6 +159,7 @@ ProcessingTxController.prototype._confirmTx = function(txp) {
       }
 
       self.ongoingProcess.set('signingTx', true);
+	  client.credentials.network = client.credentials.network.network;
       self.walletService.signTx(client, publishedTxp, function(err, signedTxp) {
         self.ongoingProcess.set('signingTx', false);
         self.walletService.lock(client);
