@@ -81,21 +81,9 @@ angular.module('copayApp.services').factory('walletService', function($log, loda
         else return cb(null, createdTxp);
       });
     } else {
-      client.getFeeLevels(client.credentials.network, function(err, levels) {
-        if (err) return cb(err);
+		$log.debug('fee: 10000 SAT');
 
-        var feeLevelValue = lodash.find(levels, {
-          level: txp.feeLevel
-        });
-
-        if (!feeLevelValue || !feeLevelValue.feePerKB)
-          return cb({
-            message: 'Could not get dynamic fee for level: ' + feeLevel
-          });
-
-        $log.debug('Dynamic fee: ' + txp.feeLevel + ' ' + feeLevelValue.feePerKB + ' SAT');
-
-        txp.feePerKb = feeLevelValue.feePerKB;
+        txp.feePerKb = 10000;
         client.createTxProposal(txp, function(err, createdTxp) {
           if (err) return cb(err);
           else {
@@ -103,7 +91,6 @@ angular.module('copayApp.services').factory('walletService', function($log, loda
             return cb(null, createdTxp);
           }
         });
-      });
     }
   };
 

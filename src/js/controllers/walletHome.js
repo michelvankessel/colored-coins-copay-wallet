@@ -879,15 +879,10 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
 
     $timeout(function() {
 
-      feeService.getCurrentFeeValue(function(err, feePerKb) {
-        ongoingProcess.set('calculatingFee', false);
-        if (err || !lodash.isNumber(feePerKb)) {
-          self.error = gettext('Could not get fee value');
-          return;
-        }
+      ongoingProcess.set('calculatingFee', false);
 
         var opts = {};
-        opts.feePerKb = feePerKb;
+        opts.feePerKb = 10000;
         opts.returnInputs = true;
         var config = configService.getSync();
         opts.excludeUnconfirmedUtxos = !config.wallet.spendUnconfirmed;
@@ -942,7 +937,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
             return warningMsg.join('\n');
           }
         });
-      });
+		
     }, 10);
   };
 
