@@ -14,7 +14,6 @@
     <div class="modal-content fix-modals-touch" ng-init="updateCopayerList()">
       <div class="payment-proposal-head" ng-style="{'background-color':color}">
         <div class="size-36">{{tx.amountStr}}</div>
-        <div class="size-14 text-light" ng-show="tx.alternativeAmountStr">{{tx.alternativeAmountStr}}</div>
         <i class="db fi-arrow-down size-24 m10v"></i>
         <span class="payment-proposal-to" ng-click="copyToClipboard(tx.toAddress, $event)">
           <i class="fi-bitcoin left"></i>

@@ -35,14 +35,6 @@
           <div class="size-36" ng-if="btx.isAsset" ng-click="copyToClipboard(btx.amountStr, $event)">
             <span class="enable_text_select">{{btx.assetAmountStr}} of {{btx.isAsset.assetName}}</span>
           </div>
-          <div class="alternative-amount" ng-if="!btx.isAsset" ng-click="showRate=!showRate" ng-init="showRate = false">
-            <span class="label gray radius" ng-show="!showRate && alternativeAmountStr">
-              {{alternativeAmountStr}}
-            </span>
-            <span class="size-12" ng-show="showRate && alternativeAmountStr">
-              {{rateStr}} ({{rateDate | amDateFormat:'MM/DD/YYYY HH:mm a'}})
-            </span>
-          </div>
         </div>
         <div ng-show="btx.action == 'invalid'">
           -
