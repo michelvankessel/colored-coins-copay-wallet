@@ -26,8 +26,6 @@ angular.module('copayAddon.coloredCoins').config(function ($provide) {
     directive.template = '' +
         '<div class="cc-logo-holder" ng-class="{ \'negative\' : negative, \'inline\' : width < 50, }">' +
           '<img ng-src="{{ logo_url }}" alt="Copay" style="{{ copay_logo_style }}">' +
-          '<div class="cc-plus">+</div>' +
-          '<div class="cc-logo" style="{{ logo_style }}"></div>' +
         '</div>';
     return $delegate;
   });
