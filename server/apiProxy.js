@@ -16,7 +16,7 @@ mainnetProxy.on('proxyReq', userAgent);
 var attach = function(app) {
 
   app.use('/api/livenet', cors, function(req, res) {
-    testnetProxy.web(req, res, { target:'http://localhost:8080' });
+    testnetProxy.web(req, res, { target:'https://irisd.blackcoin.io' });
   });
 };
 
