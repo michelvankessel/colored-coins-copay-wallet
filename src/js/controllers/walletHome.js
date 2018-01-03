@@ -377,7 +377,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
   };
 
   this.setAmount = function(amount, useAlternativeAmount) {
-    $scope.showAlternative = useAlternativeAmount;
+    $scope.showAlternative = false;
 
     self.fromInputAmount = true;
     self.setForm(null, amount, null);
@@ -590,7 +590,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
   $scope.openInputAmountModal = function(addr) {
     var fc = profileService.focusedClient;
     $scope.color = fc.backgroundColor;
-    $scope.showAlternativeAmount = $scope.showAlternative || null;
+    $scope.showAlternativeAmount = null;
     if ($scope.showAlternativeAmount) {
       $scope.amount = $scope.sendForm.alternative.$viewValue || null;
     } else {

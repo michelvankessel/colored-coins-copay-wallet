@@ -19,7 +19,6 @@
     <div ng-show="!showPercentage" ng-click="showPercentage = true">
       <span translate>Fee</span> <span class="tl">({{feeLevel|translate}})</span>:
       <span class="text-bold">{{tx.feeStr}}</span>
-      <span class="label gray radius">{{feeAlternativeStr}}</span>
     </div>
     <div ng-show="showPercentage" ng-click="showPercentage = false" translate>
       {{feeRateStr}} of the transaction

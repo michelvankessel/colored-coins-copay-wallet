@@ -64,7 +64,7 @@ angular.module('copayApp.controllers').controller('customAmountController', func
   };
 
   $scope.toggleAlternative = function() {
-    $scope.showAlternative = !$scope.showAlternative;
+    $scope.showAlternative = false;
   };
 
   $scope.shareAddress = function(uri) {

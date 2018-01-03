@@ -32,7 +32,7 @@ angular.module('copayApp.controllers').controller('inputAmountController', funct
   };
 
   $scope.toggleAlternative = function() {
-    $scope.showAlternativeAmount = !$scope.showAlternativeAmount;
+    $scope.showAlternativeAmount = false;
 
     if ($scope.amount && isExpression($scope.amount)) {
       var amount = evaluate(format($scope.amount));
@@ -141,8 +141,8 @@ angular.module('copayApp.controllers').controller('inputAmountController', funct
 
   $scope.finish = function() {
     var _amount = evaluate(format($scope.amount));
-    var amount = $scope.showAlternativeAmount ? fromFiat(_amount).toFixed(unitDecimals) : _amount.toFixed(unitDecimals);
-    var alternativeAmount = $scope.showAlternativeAmount ? _amount : toFiat(_amount);
+    var amount = _amount.toFixed(unitDecimals);
+    var alternativeAmount = _amount;
 
     if (amount % 1 == 0) amount = parseInt(amount);
 
