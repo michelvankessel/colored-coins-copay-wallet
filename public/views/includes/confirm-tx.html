@@ -1,12 +1,11 @@
 <div class="m20t">
   <label class="size-14 text-center">
-    <span translate>Send {{ tx.isAsset ? 'asset' : 'bitcoin' }}</span>
+    <span translate>Send {{ tx.isAsset ? 'asset' : 'blackcoin' }}</span>
   </label>
 </div>
 <div class="text-center">
   <div class="size-36" ng-hide="tx.isAsset">{{tx.amountStr}}</div>
   <div class="size-36" ng-show="tx.isAsset">{{tx.assetAmountStr}}</div>
-  <div class="size-12 label gray radius" ng-show="tx.alternativeAmountStr && !tx.isAsset">{{tx.alternativeAmountStr}}</div>
   <i class="db fi-arrow-down size-24 m10v"></i>
   <div class="payment-proposal-to" ng-click="copyToClipboard(tx.toAddress, $event)">
     <i class="fi-bitcoin left m10l"></i>

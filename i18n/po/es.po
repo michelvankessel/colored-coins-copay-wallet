@@ -14,6 +14,10 @@ msgstr ""
 "Language: es\n"
 "PO-Revision-Date: 2016-07-15 09:26-0400\n"
 
+#: public/views/coloredcoins/assets.html
+msgid "This requires some Bitcoins for the miner fee"
+msgstr "Blackcoin se descontará por comisión de la red blackcoin"
+
 #: public/views/modals/search.html
 #: public/views/walletHome.html
 msgid "(possible double spend)"
